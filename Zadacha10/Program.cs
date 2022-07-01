@@ -7,5 +7,12 @@
 Console.WriteLine("Введите трехзначное число");
 int usernumber=Convert.ToInt32(Console.ReadLine());
 
-int A = usernumber/10%10;
-Console.WriteLine(A);
+if( usernumber >= 100 && usernumber < 1000 )
+{
+    System.Console.WriteLine(usernumber/10%10);
+}
+else
+{
+    System.Console.WriteLine("error");
+}
+
